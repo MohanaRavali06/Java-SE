@@ -78,6 +78,13 @@ public class SCoops2
 {
     public static void main(String[] args) 
     {
-        
+        Product p=new Product("A12f","vinegar");
+        p.setPrice(55.6f);
+        p.setQuantity(500);
+        System.out.println("The product is "+p.getName()+" cost is "+ p.getPrice()+","+" Item number and quantity is "+p.getItemno()+","+p.getQtantity()+"ml");
+        Customer c=new Customer("B12fe","R.DharmikTej");
+        c.setAddress("Simhadri Hospital,Raipur");
+        c.setPhno("4278275482");
+        System.out.println("The customer is "+c.getName()+" and his/her customer id is "+c.getCustId()+","+" address is "+c.getAddress()+" phone number is "+c.getPhno());
     }   
 }
